@@ -1,5 +1,5 @@
-let wss = require("ws").Server;
-let server = new wss({port:88});
+let wss = require( "ws" ).Server;
+let server = new wss( {port:88} );
 let client = new Set();
 
 server.on(
