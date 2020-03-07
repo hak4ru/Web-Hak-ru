@@ -1,7 +1,7 @@
 let field = document.getElementById("field");
 let chat = document.getElementById("chat");
 
-let ws = new WebSocket("ws://localhost:88/");
+let ws = new WebSocket("ws://uc-kb2-prep:88/");
 
 ws.onmessage = function(message){
     chat.value = message.data + "\n" + chat.value;

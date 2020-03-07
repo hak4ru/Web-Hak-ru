@@ -19,3 +19,11 @@ server.on(
                 client.delete(socket);
             });
     });
+
+    
+let express = require("express");
+let app = express();
+    
+app.use(express.static("../client"));
+    
+app.listen(80);
